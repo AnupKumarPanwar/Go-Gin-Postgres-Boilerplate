@@ -11,8 +11,7 @@ import (
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	if len(os.Args) != 2 {
-		cmd.Help()
-		os.Exit(0)
+		cmd.Serve()
 	}
 	command := os.Args[1]
 	switch command {
