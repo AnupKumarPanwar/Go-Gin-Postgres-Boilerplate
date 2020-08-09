@@ -3,12 +3,11 @@ package cmd
 import (
 	"database/sql"
 	"fmt"
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database/postgres"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
-	_ "github.com/lib/pq"
 	"log"
-	"rightswipe/constants"
+
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
+	"github.com/golang-migrate/migrate"
+	"github.com/golang-migrate/migrate/database/postgres"
 )
 
 func DbMigrate() {

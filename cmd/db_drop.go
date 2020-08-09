@@ -4,7 +4,8 @@ import (
 	"bytes"
 	"log"
 	"os/exec"
-	"rightswipe/constants"
+
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 )
 
 func DbDrop() {

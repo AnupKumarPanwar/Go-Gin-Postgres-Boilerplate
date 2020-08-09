@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"rightswipe/config"
-	"rightswipe/db"
-	"rightswipe/router"
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/config"
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/db"
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/router"
 )
 
 func Serve() {

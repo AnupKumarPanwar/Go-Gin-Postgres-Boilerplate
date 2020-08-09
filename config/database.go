@@ -1,8 +1,6 @@
 package config
 
-import (
-	"rightswipe/constants"
-)
+import "github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 
 type DatabaseConfig struct {
 	Host     string

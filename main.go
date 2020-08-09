@@ -3,8 +3,9 @@ package main
 import (
 	"log"
 	"os"
-	"rightswipe/cmd"
-	"rightswipe/constants"
+
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/cmd"
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 )
 
 func main() {

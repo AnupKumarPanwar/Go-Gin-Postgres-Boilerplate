@@ -1,9 +1,9 @@
 package router
 
 import (
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/config"
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/controllers"
 	"github.com/gin-gonic/gin"
-	"rightswipe/config"
-	"rightswipe/controllers"
 )
 
 func Init() {

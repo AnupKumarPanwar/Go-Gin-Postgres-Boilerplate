@@ -2,10 +2,10 @@ package db
 
 import (
 	"fmt"
-	"github.com/jinzhu/gorm"
-	_ "github.com/lib/pq"
 	"log"
-	"rightswipe/config"
+
+	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/config"
+	"github.com/jinzhu/gorm"
 )
 
 var db *gorm.DB
