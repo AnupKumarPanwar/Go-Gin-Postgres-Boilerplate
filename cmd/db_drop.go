@@ -1,11 +1,10 @@
 package cmd
 
 import (
+	"Go-Gin-Postgres-Boilerplate/constants"
 	"bytes"
 	"log"
 	"os/exec"
-
-	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 )
 
 func DbDrop() {

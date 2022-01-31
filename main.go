@@ -1,11 +1,10 @@
 package main
 
 import (
+	"Go-Gin-Postgres-Boilerplate/cmd"
+	"Go-Gin-Postgres-Boilerplate/constants"
 	"log"
 	"os"
-
-	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/cmd"
-	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 )
 
 func main() {

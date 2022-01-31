@@ -1,11 +1,11 @@
 package cmd
 
 import (
+	"Go-Gin-Postgres-Boilerplate/constants"
 	"database/sql"
 	"fmt"
 	"log"
 
-	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
 	"github.com/golang-migrate/migrate"
 	"github.com/golang-migrate/migrate/database/postgres"
 )

@@ -1,6 +1,6 @@
 package config
 
-import "github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/constants"
+import "Go-Gin-Postgres-Boilerplate/constants"
 
 type ServerConfig struct {
 	Host string

@@ -1,11 +1,12 @@
 package database
 
 import (
+	"Go-Gin-Postgres-Boilerplate/config"
 	"fmt"
 	"log"
 
-	"github.com/anupkumarpanwar/Go-Gin-Postgres-Boilerplate/config"
-	"github.com/jinzhu/gorm"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
 )
 
 var db *gorm.DB
@@ -19,7 +20,8 @@ func Init() {
 	sslMode := databaseConfig.SSLMode
 	password := databaseConfig.Password
 	var err error
-	db, err = gorm.Open(databaseConfig.Driver, fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=%s", username, password, host, port, dbName, sslMode))
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=%s", host, username, password, dbName, port, sslMode)
+	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal(err)
 	}
